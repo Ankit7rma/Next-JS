@@ -5,6 +5,7 @@ export default function Home() {
     <main className="flex  flex-col items-center justify-between p-24">
         Hello World
         <Link href="about">Go To About Page</Link>
+        <Link href="users">Go to Users</Link>
     </main>
   )
 }
