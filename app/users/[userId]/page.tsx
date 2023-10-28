@@ -47,3 +47,14 @@ export default async function UserPage({ params: { userId } }: Params) {
         </>
     )
 }
+
+export async function generateStaticParams(){
+    const userData:Promise<User[]> = getAllUsers()
+    const users = await userData;
+
+    return (users.map((user)=>{
+        userId: user.id.toString()
+    }
+    
+    ))
+}
