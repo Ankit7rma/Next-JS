@@ -3,10 +3,9 @@ import getUserPosts from "@/lib/getUserPosts"
 import { Suspense } from "react"
 import UserPosts from "./components/UserPosts"
 import type { Metadata } from 'next'
-import Link from "next/link"
-import { Asul } from "next/font/google"
 import getAllUsers from "@/lib/getAllUsers"
 import { userInfo } from "os"
+import Link from "next/link"
 
 type Params = {
     params: {
