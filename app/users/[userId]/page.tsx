@@ -4,6 +4,9 @@ import { Suspense } from "react"
 import UserPosts from "./components/UserPosts"
 import type { Metadata } from 'next'
 import Link from "next/link"
+import { Asul } from "next/font/google"
+import getAllUsers from "@/lib/getAllUsers"
+import { userInfo } from "os"
 
 type Params = {
     params: {
@@ -38,7 +41,6 @@ export default async function UserPage({ params: { userId } }: Params) {
             <Link href="/">BAck to Home</Link>
             <br />
             <Suspense fallback={<h2>Loading...</h2>}>
-                {/* @ts-expect-error Server Component */}
                 <UserPosts promise={userPostsData} />
             </Suspense>
             
