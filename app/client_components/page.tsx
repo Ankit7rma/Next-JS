@@ -1,9 +1,10 @@
-import React from 'react'
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
-export default function Client() {
+export default function Home() {
   return (
-    <div>
-      Client
-    </div>
+    <main className={inter.className}>
+
+    </main>
   )
 }
