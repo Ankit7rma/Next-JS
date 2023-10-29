@@ -39,13 +39,14 @@ export default async function UserPage({ params: { userId } }: Params) {
 
     const user = await userData
 
-    if (!user?.name) notFound()
+    if (!user?.name) return notFound()
 
     return (
         <>
             <h2>{user.name}</h2>
             <br />
             <Link href="/users">Back To Users</Link>
+            <br />
             <br />
             <Suspense fallback={<h2>Loading...</h2>}>
                 <UserPosts promise={userPostsData} />
