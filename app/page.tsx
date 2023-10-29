@@ -8,6 +8,7 @@ export default function Home() {
         <Link href="about">Go To About Page</Link>
         <Link href="users">Go to Users</Link>
         <Link href="client_components">Client-Components</Link>
+        <Link href="blog_web" > Blog_Website</Link>
     </main>
   )
 }
