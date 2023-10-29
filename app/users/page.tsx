@@ -10,6 +10,7 @@ export default async function UsersPage() {
     const usersData: Promise<User[]> = getAllUsers()
 
     const users = await usersData
+   
 
     //console.log('Hello') // Did you find where this appears?
 
